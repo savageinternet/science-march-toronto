@@ -8,6 +8,7 @@
 body, html {
   padding: 0;
   margin: 0;
+  min-width: 320px;
   font-family: 'Raleway', sans-serif;
 }
 html {
@@ -64,7 +65,9 @@ nav {
   margin: 0;
 }
 #menu > li {
+  cursor: pointer;
   display: none;
+  background-color: #ED2226;
 }
 #menu > li:hover {
   background-color: #6B0103;
@@ -80,18 +83,22 @@ nav {
     text-align: left;
   }
   #menu::before {
-    font-size: 4rem;
+    cursor: pointer;
+    font-size: 3.6rem;
     color: #fff;
-    margin-left: 16px;
+    padding: 0 16px;
     content: '\2261';
-    line-height: 56px;
+    line-height: 64px;
+  }
+  #menu:hover::before {
+    background-color: #6B0103;
   }
   #menu:hover > li {
     display: block;
   }
-  #menu > li {
+  #menu > li > a {
+    display: inline-block;
     padding: 16px;
-    background-color: #ED2226;
   }
 }
 @media only screen and (min-width: 720px) {
@@ -100,12 +107,17 @@ nav {
   }
   #menu > li {
     display: inline-block;
+    height: 64px;
+  }
+  #menu > li > a {
     padding: 9px 16px;
+    display: inline-block;
     height: 64px;
   }
 }
 #donate {
-  display: inline-block;
+  display: none;
+  /*display: inline-block;*/
   float: right;
   padding: 8px;
   margin: 7px 7px 8px 16px;
@@ -167,8 +179,35 @@ main {
   max-width: 1200px;
   margin: auto;
 }
+section {
+  padding-top: 64px;
+}
+#volunteer_form {
+  width: 320px;
+  height: 1350px;
+}
+@media only screen and (min-width: 480px) {
+  #volunteer_form {
+    width: 480px;
+    height: 1200px;
+  }
+}
+@media only screen and (min-width: 720px) {
+  #volunteer_form {
+    width: 720px;
+    height: 1200px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #volunteer_form {
+    width: 960px;
+    height: 1200px;
+  }
+}
 footer {
-  background-color: #C21A01;
+  color: white;
+  background-color: #6B0103;
+  height: 32px;
 }
 </style>
 </head>
@@ -176,9 +215,10 @@ footer {
 <nav>
   <a id="donate" href="#">Donate!</a>
   <ul id="menu">
-    <li><a href="#social">About</a></li>
+    <!--<li><a href="#social">Details</a></li>-->
+    <li><a href="#about">About</a></li>
     <li><a href="#volunteer">Volunteer</a></li>
-    <li><a href="#faq">FAQ</a></li>
+    <!--<li><a href="#faq">FAQ</a></li>-->
   </ul>
 </nav>
 <header>
@@ -195,7 +235,7 @@ footer {
   <a href="https://twitter.com/ScienceMarchTO"><img src="/twitter.png" /></a>
 </div>
 <main role="main">
-<section>
+<section id="about">
 <h1>SCIENCE, NOT SILENCE</h1>
 <p>
 The March for Science is a celebration of our passion for science and a call to support and safeguard the scientific community. Recent policy changes have caused heightened worry among scientists, and the incredible and immediate outpouring of support has made clear that these concerns are also shared by hundreds of thousands of people around the world. The mischaracterization of science as a partisan issue, which has given policymakers permission to reject overwhelming evidence, is a critical and urgent matter. It is time for people who support scientific research and evidence-based policies to take a public stand and be counted.
@@ -206,12 +246,18 @@ The March for Science is a celebration of our passion for science and a call to 
 We are scientists and science enthusiasts. We come from all races, all religions, all gender identities, all sexual orientations, all abilities, all socioeconomic backgrounds, all political perspectives, and all nationalities. Our diversity is our greatest strength: a wealth of opinions, perspectives, and ideas is critical for the scientific process. What unites us is a love of science, and an insatiable curiosity. We all recognize that science is everywhere and affects everyone.
 </p>
 <p>
-Science is often an arduous process, but it is also thrilling. A universal human curiosity and dogged persistence is the greatest hope for the future. This movement cannot and will not end with a march. Our plans for policy change and community outreach will start with marches worldwide and a teach-in at the National Mall, but it is imperative that we continue to celebrate and defend science at all levels - from local schools to federal agencies - throughout the world.
+Science is often an arduous process, but it is also thrilling. A universal human curiosity and dogged persistence is the greatest hope for the future. This movement cannot and will not end with a march. It is imperative that we continue to celebrate and defend science at all levels - from local schools to federal agencies - throughout the world.
 </p>
+</section>
+<section id="volunteer">
+  <h1>Volunteer with Us</h1>
+  <p>
+    We'll have more information on specific volunteer positions in the coming weeks.  If you're interested in volunteering with March for Science Toronto, fill out the form below!
+  </p>
+  <iframe id="volunteer_form" src="https://docs.google.com/forms/d/e/1FAIpQLSeUL5JDvXvRltb0GeYhAGpU1oAE0o0XeWPCiFNCXV5VbqqDmw/viewform?embedded=true" width="960" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 </section>
 </main>
 <footer>
-
 </footer>
 </body>
 </html>
