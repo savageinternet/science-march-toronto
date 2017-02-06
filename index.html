@@ -21,10 +21,26 @@ body {
   box-sizing: inherit;
 }
 header h1 {
-  font-size: 4.8rem;
+  font-size: 1.8rem;
 }
 header h2 {
   font-size: 3.2rem;
+}
+@media only screen and (min-width: 720px) {
+  header h1 {
+    font-size: 2.8rem;
+  }
+  header h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header h1 {
+    font-size: 4rem;
+  }
+  header h2 {
+    font-size: 3rem;
+  }
 }
 main h1 {
   font-size: 4rem;
@@ -41,32 +57,62 @@ nav {
   top: 0;
   width: 100%;
 }
-nav > ul {
-  float: right;
+#menu {
+  float: left;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-nav > ul > li {
-  display: inline-block;
-  padding: 9px 16px;
-  height: 64px;
+#menu > li {
+  display: none;
 }
-nav > ul > li:not(:last-child):hover {
+#menu > li:hover {
   background-color: #6B0103;
 }
-nav > ul > li:last-child {
-  margin-left: 16px;
-}
-nav > ul > li > a {
+#menu > li > a {
   color: #fff;
   text-decoration: none;
   font-size: 1.5rem;
   line-height: 48px;
 }
+@media only screen and (max-width: 719px) {
+  #menu {
+    text-align: left;
+  }
+  #menu::before {
+    font-size: 4rem;
+    color: #fff;
+    margin-left: 16px;
+    content: '\2261';
+    line-height: 56px;
+  }
+  #menu:hover > li {
+    display: block;
+  }
+  #menu > li {
+    padding: 16px;
+    background-color: #ED2226;
+  }
+}
+@media only screen and (min-width: 720px) {
+  #menu {
+    float: right;
+  }
+  #menu > li {
+    display: inline-block;
+    padding: 9px 16px;
+    height: 64px;
+  }
+}
 #donate {
+  display: inline-block;
+  float: right;
   padding: 8px;
+  margin: 7px 7px 8px 16px;
   color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 32px;
   border: 2px solid #fff;
   border-radius: 8px;
 }
@@ -80,7 +126,7 @@ header {
   margin-top: 64px;
   background-image: url('/canadarm-faded.jpg');
   background-size: cover;
-  background-position: 50% 40%;
+  background-position: 75% 40%;
   height: 480px;
   color: white;
 }
@@ -128,10 +174,11 @@ footer {
 </head>
 <body>
 <nav>
-  <div id="logo_small"></div>
-  <ul>
+  <a id="donate" href="#">Donate!</a>
+  <ul id="menu">
+    <li><a href="#social">About</a></li>
+    <li><a href="#volunteer">Volunteer</a></li>
     <li><a href="#faq">FAQ</a></li>
-    <li><a id="donate" href="#">Coming soon: Donate!</a></li>
   </ul>
 </nav>
 <header>
@@ -166,8 +213,5 @@ Science is often an arduous process, but it is also thrilling. A universal human
 <footer>
 
 </footer>
-<script>
-
-</script>
 </body>
 </html>
