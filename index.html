@@ -6,68 +6,149 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <style>
 body, html {
-  font-size: 62.5%;
   padding: 0;
   margin: 0;
   font-family: 'Raleway', sans-serif;
 }
 html {
   box-sizing: border-box;
+  text-align: center;
+}
+body {
+  font-size: 62.5%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
+header h1 {
+  font-size: 4.8rem;
+}
+header h2 {
+  font-size: 3.2rem;
+}
+main h1 {
+  font-size: 4rem;
+}
+main h2 {
+  font-size: 2.4rem;
+}
 nav {
   position: fixed;
+  z-index: 10000;
   height: 64px;
-  background-color: #FF0000;
+  background-color: #ED2226;
+  color: #fff;
   top: 0;
   width: 100%;
+}
+nav > ul {
+  float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav > ul > li {
+  display: inline-block;
+  padding: 9px 16px;
+  height: 64px;
+}
+nav > ul > li:not(:last-child):hover {
+  background-color: #6B0103;
+}
+nav > ul > li:last-child {
+  margin-left: 16px;
+}
+nav > ul > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 48px;
+}
+#donate {
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+#donate:hover {
+  color: #fff;
+  border: 2px solid #6B0103;
+  background-color: #6B0103;
 }
 header {
   position: relative;
   margin-top: 64px;
-  background-image: url('/canadarm.jpg');
+  background-image: url('/canadarm-faded.jpg');
   background-size: cover;
   background-position: 50% 40%;
   height: 480px;
-  text-align: center;
   color: white;
 }
-#title > h1 {
-  margin: 0;
-  font-size: 6.2rem;
+#logo_wrapper {
+  padding-top: 16px;
 }
+#logo {
+  width: 240px;
+  height: 240px;
+}
+#title {
+  padding-top: 16px;
+}
+#title > h1,
 #title > h2 {
   margin: 0;
-  font-size: 3.2rem;
 }
 #social {
   height: 64px;
-  background: #f00;
+  background-color: #6B0103;
+  color: #fff;
 }
 main {
   display: block;
+  font-size: 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+footer {
+  background-color: #C21A01;
 }
 </style>
 </head>
 <body>
 <nav>
-  test
+  <div id="logo_small"></div>
+  <ul>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a id="donate" href="#">Coming soon: Donate!</a></li>
+  </ul>
 </nav>
 <header>
+  <div id="logo_wrapper">
+    <img id="logo" src="logo.png" alt="March for Science Toronto Logo" />
+  </div>
   <div id="title">
     <h1>MARCH FOR SCIENCE TORONTO</h1>
     <h2>APRIL 22, 2017</h2>
   </div>
 </header>
 <div id="social">
-  test
+  TODO: put
 </div>
 <main role="main">
-  <section>
-
-  </section>
+<section>
+<h1>SCIENCE, NOT SILENCE</h1>
+<p>
+The March for Science is a celebration of our passion for science and a call to support and safeguard the scientific community. Recent policy changes have caused heightened worry among scientists, and the incredible and immediate outpouring of support has made clear that these concerns are also shared by hundreds of thousands of people around the world. The mischaracterization of science as a partisan issue, which has given policymakers permission to reject overwhelming evidence, is a critical and urgent matter. It is time for people who support scientific research and evidence-based policies to take a public stand and be counted.
+</p>
+<h2>ON APRIL 22, 2017, WE WALK OUT OF THE LAB AND INTO THE STREETS.</h2>
+</p>
+<p>
+We are scientists and science enthusiasts. We come from all races, all religions, all gender identities, all sexual orientations, all abilities, all socioeconomic backgrounds, all political perspectives, and all nationalities. Our diversity is our greatest strength: a wealth of opinions, perspectives, and ideas is critical for the scientific process. What unites us is a love of science, and an insatiable curiosity. We all recognize that science is everywhere and affects everyone.
+</p>
+<p>
+Science is often an arduous process, but it is also thrilling. A universal human curiosity and dogged persistence is the greatest hope for the future. This movement cannot and will not end with a march. Our plans for policy change and community outreach will start with marches worldwide and a teach-in at the National Mall, but it is imperative that we continue to celebrate and defend science at all levels - from local schools to federal agencies - throughout the world.
+</p>
+</section>
 </main>
 <footer>
 
