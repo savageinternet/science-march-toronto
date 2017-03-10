@@ -200,6 +200,54 @@ main {
 section {
   padding-top: 64px;
 }
+.schedule-item {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+.schedule-item > div {
+  vertical-align: top;
+}
+.schedule-time {
+  display: inline-block;
+  width: 100px;
+}
+.schedule-body {
+  display: inline-block;
+  width: calc(100% - 108px);
+}
+#detail_column_route {
+  position: relative;
+}
+#detail_map {
+  width: 100%;
+}
+#detail_map_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  padding: 16px;
+  font-size: 2.2rem;
+  color: #777;
+}
+@media only screen and (min-width: 720px) {
+  #detail_map_overlay {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #details_wrapper {
+    text-align: left;
+  }
+  .detail-column {
+    display: inline-block;
+    width: calc(50% - 4px);
+    vertical-align: top;
+  }
+}
 #volunteer_form {
   width: 320px;
   height: 1350px;
@@ -237,7 +285,8 @@ footer a {
 <nav>
   <a id="donate" href="#">Donate!</a>
   <ul id="menu">
-    <!--<li><a href="#social">Details</a></li>-->
+    <li><a href="#">Top</a></li>
+    <li><a href="#details">Details</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#volunteer">Volunteer</a></li>
     <!--<li><a href="#faq">FAQ</a></li>-->
@@ -258,6 +307,28 @@ footer a {
   <a href="mailto:sciencemarchto@gmail.com"><img src="/email.png" /></a>
 </div>
 <main role="main">
+<section id="details">
+  <h1>SCHEDULE AND ROUTE</h1>
+  <div id="details_wrapper">
+    <div id="detail_column_schedule" class="detail-column">
+      <div class="schedule-item">
+        <div class="schedule-time">11 am</div>
+        <div class="schedule-body">Opening Speakers and March (location TBD)</div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-time">12 pm</div>
+        <div class="schedule-body">Rally at <a href="https://goo.gl/maps/XVseGbXU3VU2">Queen's Park</a></div>
+      </div>
+    </div>
+    <div id="detail_column_route" class="detail-column">
+      <img id="detail_map" src="https://maps.googleapis.com/maps/api/staticmap?size=640x480&markers=label:A|43.652170,-79.383394&markers=label:B|43.663939,-79.392235" alt="Map of March for Science Toronto route" />
+      <div id="detail_map_overlay">
+        <p>ROUTE TBD</p>
+        <p><small>We will announce the route shortly, so keep posted!</small></p>
+      </div>
+    </div>
+  </div>
+</section>
 <section id="about">
 <h1>SCIENCE, NOT SILENCE</h1>
 <p>
