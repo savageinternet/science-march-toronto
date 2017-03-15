@@ -136,20 +136,27 @@ nav {
     height: 64px;
   }
 }
-#donate {
-  display: none;
-  /*display: inline-block;*/
-  float: right;
+#donate,
+#link_tshirt {
+  display: inline-block;
   padding: 8px;
   margin: 7px 7px 8px 16px;
   color: #fff;
+  background-color: #ED2226;
   text-decoration: none;
-  font-size: 1.5rem;
   line-height: 32px;
   border: 2px solid #fff;
   border-radius: 8px;
 }
-#donate:hover {
+#donate {
+  float: right;
+  font-size: 1.5rem;
+}
+#link_tshirt {
+  font-size: 2rem;
+}
+#donate:hover,
+#link_tshirt:hover {
   color: #fff;
   border: 2px solid #6B0103;
   background-color: #6B0103;
@@ -286,14 +293,12 @@ footer a {
 </head>
 <body>
 <nav>
-  <a id="donate" href="#">Donate!</a>
+  <a id="donate" href="#tshirts">Support Us!</a>
   <ul id="menu">
     <li><a href="#">Top</a></li>
     <li><a href="#details">Details</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#volunteer">Volunteer</a></li>
-    <li><a class="link-donate" target="_blank" href="https://teesforthepeople.com/products/march-for-science-toronto">Donate</a></li>
-    <!--<li><a href="#faq">FAQ</a></li>-->
   </ul>
 </nav>
 <header>
@@ -325,7 +330,7 @@ footer a {
       </div>
     </div>
     <div id="detail_column_route" class="detail-column">
-      <img id="detail_map" src="https://maps.googleapis.com/maps/api/staticmap?size=640x400&markers=label:A%7C43.652170,-79.383394&markers=label:B%7C43.663939,-79.392235&path=color:0xed2226aa%7C43.652170,-79.383394%7C43.660561,-79.387423%7C43.659901,-79.390310%7C43.663939,-79.392235&key=AIzaSyCVTxFf6SqudTmF49jy-nD81jNFY25u5uY&signature=I6hDK4mI3LQx7FEYxyAuCVf7GDw=" alt="Route map of March for Science Toronto: Nathan Phillips Square up Elizabeth to College to Queen's Park front lawn" />
+      <img id="detail_map" src="https://maps.googleapis.com/maps/api/staticmap?size=640x400&markers=label:A|43.652170,-79.383394&markers=label:B|43.661264,-79.391150&path=color:0xed2226aa|43.652170,-79.383394|43.652689,-79.382537|43.660791,-79.385817|43.659929,-79.390227|43.661264,-79.391150&key=AIzaSyCVTxFf6SqudTmF49jy-nD81jNFY25u5uY" alt="Route map of March for Science Toronto: Nathan Phillips Square up Bay to College to Queen's Park front lawn" />
     </div>
   </div>
 </section>
@@ -345,10 +350,21 @@ Join scientists, educators, students, engineers, parents, children, science comm
 </p>
 <h2>ON APRIL 22, 2017, WE WALK OUT OF THE LAB AND INTO THE STREETS.  JOIN US!</h2>
 </section>
-<section id="volunteer">
-  <h1>Volunteer with Us</h1>
+<section id="tshirts">
+  <h1>SUPPORT THE MARCH</h1>
   <p>
-    We'll have more information on specific volunteer positions in the coming weeks.  If you're interested in volunteering with March for Science Toronto, fill out the form below!
+Proceeds from these shirts go towards March for Science Toronto costs such as insurance and equipment rentals. Any extra money raised will be donated to a local Canadian science-based charity.
+  </p>
+  <a id="link_tshirt" target="_blank" href="https://teesforthepeople.com/products/march-for-science-toronto">Get the T-Shirt</a>
+  <p>
+    <a target="_blank" href="https://teesforthepeople.com/products/march-for-science-toronto"><img src="/ScienceMarchTO_BlackAdultCottonCrewneckTee.png" /></a>
+    <a target="_blank" href="https://teesforthepeople.com/products/march-for-science-toronto"><img src="/ScienceMarchTO_DarkHeatherLadiesCrewneckTee.png" /></a>
+  </p>
+</section>
+<section id="volunteer">
+  <h1>VOLUNTEER WITH US</h1>
+  <p>
+    We'll have more information on specific volunteer positions soon.  If you're interested in volunteering with March for Science Toronto, fill out the form below!
   </p>
   <iframe id="volunteer_form" src="https://docs.google.com/forms/d/e/1FAIpQLSeUL5JDvXvRltb0GeYhAGpU1oAE0o0XeWPCiFNCXV5VbqqDmw/viewform?embedded=true" width="960" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 </section>
