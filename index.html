@@ -251,14 +251,18 @@ section {
 }
 .schedule-item > div {
   vertical-align: top;
+  text-align: left;
 }
 .schedule-time {
   display: inline-block;
-  width: 100px;
+  width: 140px;
+  text-align: left;
+  padding-left: 10px;
 }
 .schedule-body {
   display: inline-block;
-  width: calc(100% - 124px);
+  width: calc(100% - 148px);
+  text-align: left;
 }
 #detail_column_route {
   position: relative;
@@ -592,7 +596,37 @@ If you're interested in supporting the March for Science Toronto, please email u
 </p>
 <section id="details">
 <h2 id="details">SCHEDULE AND ROUTE</h2>
-This year, the Toronto March for Science will begin at Nathan Phillips Square and end in Queen’s Park, on 14th April 2018. Details will be shared shortly!
+<div id="details_wrapper">
+  <div id="detail_column_schedule" class="detail-column">
+    <div class="schedule-item">
+      <div class="schedule-time">11 am</div>
+      <div class="schedule-body">Opening Speakers at <a href="https://goo.gl/maps/3ZXuNXMksfG2">Nathan Phillips Square</a></div>
+    </div>
+    <div class="schedule-item">
+      <div class="schedule-time">11:45 am</div>
+      <div class="schedule-body">March to Queen's Park</div>
+    </div>
+    <div class="schedule-item">
+      <div class="schedule-time">12:30 pm</div>
+      <div class="schedule-body">Speakers at <a href="https://goo.gl/maps/XVseGbXU3VU2">Queen's Park</a></div>
+    </div>
+    <div class="schedule-item">
+      <div class="schedule-time">1:15 pm</div>
+      <div class="schedule-body">Anticipated end of event</div>
+    </div>
+  </div>
+  <div id="detail_column_route" class="detail-column">
+    <img id="detail_map" src="https://maps.googleapis.com/maps/api/staticmap?size=640x400&markers=label:A|43.652170,-79.383394&markers=label:B|43.661264,-79.391150&path=color:0xed2226aa|43.652170,-79.383394|43.652689,-79.382537|43.660791,-79.385817|43.659929,-79.390227|43.661264,-79.391150&key=AIzaSyCVTxFf6SqudTmF49jy-nD81jNFY25u5uY" alt="Route map of March for Science Toronto: Nathan Phillips Square up Bay to College to Queen's Park front lawn" />
+  </div>
+  <h2 style="text-align:center">FURTHER DETAILS</h2>
+  <p>
+    These documents contain information on March for Science Toronto plans, policies, and guiding principles.
+  </p>
+  <ul id="documents">
+    <li><a target="_blank" href="flyers/pressrelease.pdf"><strong>Press Release</strong></a>: overview of March for Science Toronto's plans and objectives.</li>
+    <li><a target="_blank" href="/flyers/flyer.png"><strong>Flyer</strong></a> : for posting on public signage boards and other locations.</li>
+  </ul>
+</div>
 <h2>SPEAKERS</h2>
 <div class="bios">
   <div class="bio">
