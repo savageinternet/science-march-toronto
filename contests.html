@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>March for Science Toronto</title>
+<meta name="description" content="March and rally in Toronto on April 14 in support of scientists, evidence-based policy, and science education.">
+<meta name="robots" content="index, follow">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="March for Science Toronto" />
+<meta name="twitter:description" content="March and rally in Toronto on April 14 in support of scientists, evidence-based policy, and science education." />
+<meta name="twitter:image" content="https://sciencemarchto.ca/logo.png" />
+<meta name="twitter:creator" content="@ScienceMarchTO" />
+<meta name="twitter:site" content="@ScienceMarchTO" />
+
+<meta property="og:url" content="https://sciencemarchto.ca/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="March for Science Toronto" />
+<meta property="og:description" content="March and rally in Toronto on April 14 in support of scientists, evidence-based policy, and science education." />
+<meta property="og:site_name" content="March for Science Toronto" />
+<meta property="og:image" content="https://sciencemarchto.ca/logo.png" />
+
+<meta http-equiv="Cache-control" content="no-cache" />
+
+<style>
+body, html {
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  font-family: 'Montserrat', sans-serif;
+}
+html {
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  font-size: 62.5%;
+}
+h1, h2 {
+  color: #00507F;
+}
+a {
+  color: #00507F;
+}
+a:active, a:visited {
+  color: #F06046;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+header h1 {
+  font-size: 1.8rem;
+  color: white;
+}
+header h2 {
+  font-size: 3.2rem;
+  color: white;
+}
+@media only screen and (min-width: 720px) {
+  header h1 {
+    font-size: 2.8rem;
+  }
+  header h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  header h1 {
+    font-size: 4rem;
+  }
+  header h2 {
+    font-size: 3rem;
+  }
+}
+main h1 {
+  font-size: 4rem;
+}
+main h2 {
+  font-size: 2.4rem;
+}
+nav {
+  position: fixed;
+  z-index: 10000;
+  height: 64px;
+  background-color: #30BDBB;
+  color: #000;
+  top: 0;
+  width: 100%;
+}
+#menu {
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#menu > li {
+  cursor: pointer;
+  display: none;
+  background-color: #30BDBB;
+}
+#menu > li:hover {
+  background-color: #00507F;
+  color: #fff;
+}
+#menu > li > a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 48px;
+}
+#menu > li > a:hover {
+  color: #fff;
+}
+#menu > li > a.link-donate {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 719px) {
+  #menu {
+    text-align: left;
+  }
+  #menu::before {
+    cursor: pointer;
+    font-size: 3.6rem;
+    color: #000;
+    padding: 0 16px;
+    content: '\2261';
+    line-height: 64px;
+  }
+  #menu:hover::before {
+    background-color: #00507F;
+    color: #fff;
+  }
+  #menu:hover > li {
+    display: block;
+    color: #fff;
+  }
+  #menu > li > a {
+    display: inline-block;
+    padding: 16px;
+    color: #000;
+  }
+  #menu > li > a:hover {
+    color: #fff;
+  }
+}
+@media only screen and (min-width: 720px) {
+  #menu {
+    float: right;
+  }
+  #menu > li {
+    display: inline-block;
+    height: 64px;
+  }
+  #menu > li > a {
+    padding: 9px 16px;
+    display: inline-block;
+    height: 64px;
+  }
+}
+#about > ul,
+#resources > ul {
+  text-align: left;
+}
+#donate,
+#link_tshirt {
+  display: inline-block;
+  padding: 8px;
+  margin: 7px 7px 8px 16px;
+  color: #000;
+  background-color: #30BDBB;
+  text-decoration: none;
+  line-height: 32px;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+#donate {
+  float: right;
+  font-size: 1.5rem;
+}
+#link_tshirt {
+  font-size: 2rem;
+}
+#donate:hover,
+#link_tshirt:hover {
+  color: #fff;
+  border: 2px solid #00507F;
+  background-color: #00507F;
+}
+header {
+  position: relative;
+  margin-top: 64px;
+  background-image: url('/march-shot.jpg');
+  background-size: cover;
+  background-position: 75% 40%;
+  height: 500px;
+  color: white;
+}
+#logo_wrapper {
+  padding-top: 16px;
+}
+#logo {
+  width: 240px;
+  height: 240px;
+}
+#title {
+  padding-top: 16px;
+}
+#title > h1,
+#title > h2 {
+  margin: 0;
+}
+#presenter {
+  width: 150px;
+}
+.social {
+  height: 64px;
+  background-color: #00507F;
+  color: #fff;
+}
+.social > a {
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 16px;
+}
+.social > a:hover {
+  background-color: #30BDBB;
+}
+.social > a > img {
+  width: 48px;
+  height: 48px;
+}
+main {
+  display: block;
+  font-size: 1.5rem;
+  min-width: 320px;
+  max-width: 1200px;
+  margin: auto;
+}
+section {
+  padding-top: 64px;
+}
+p, li {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.schedule-item {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+.schedule-item > div {
+  vertical-align: top;
+  text-align: left;
+}
+.schedule-time {
+  display: inline-block;
+  width: 140px;
+  text-align: left;
+  padding-left: 10px;
+}
+.schedule-body {
+  display: inline-block;
+  width: calc(100% - 148px);
+  text-align: left;
+}
+#detail_column_route {
+  position: relative;
+}
+#detail_map {
+  width: 100%;
+}
+#detail_map_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  padding: 16px;
+  font-size: 2.2rem;
+  color: #777;
+}
+@media only screen and (min-width: 720px) {
+  #detail_map_overlay {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #details_wrapper {
+    text-align: left;
+  }
+  .detail-column {
+    display: inline-block;
+    width: calc(50% - 4px);
+    vertical-align: top;
+  }
+}
+#documents {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  text-align: left;
+}
+#supporter_logos > img {
+  width: 45%;
+  vertical-align: middle;
+  margin: 2px;
+}
+@media only screen and (min-width: 720px) {
+  #supporter_logos > img {
+    width: 30%;
+    margin: 4px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #supporter_logos > img {
+    width: 20%;
+    margin: 8px;
+  }
+}
+section > p {
+  line-height: 2rem;
+}
+.g-form {
+  width: 320px;
+}
+@media only screen and (min-width: 480px) {
+  .g-form {
+    width: 480px;
+  }
+}
+@media only screen and (min-width: 720px) {
+  .g-form {
+    width: 720px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .g-form {
+    width: 960px;
+  }
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.bios {
+  text-align: left;
+}
+.bio {
+  margin: 0 1%;
+}
+@media only screen and (min-width: 1024px) {
+  .bio {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    margin: 0 1%;
+  }
+}
+.bio > h2 {
+  margin: 16px 0;
+}
+.bio > h3 {
+  margin: 8px 0;
+}
+.bio > img {
+  border-radius: 80px;
+  clear: both;
+  float: right;
+  height: 160px;
+  margin: 16px;
+  width: 160px;
+}
+.bio > p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.bio > .speech {
+  font-size: 1.6rem;
+}
+footer {
+  color: white;
+  font-size: 0.8rem;
+  background-color: #00507F;
+  padding: 16px;
+}
+footer a {
+  color: white;
+}
+
+/* Slideshow stuff */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 12px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: #bbb;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #30BDBB;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #00507F;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a id="donate" href="https://sciencemarchto.ca/#tshirts">Donate!</a>
+  <ul id="menu">
+    <!--<li><a href="#subtitle">Speakers</a></li>-->
+    <!--<li><a href="#resources">Resources</a></li>-->
+    <li><a href="https://sciencemarchto.ca/#about">The March</a></li>
+    <li><a href="https://sciencemarchto.ca/#volunteer">Volunteer</a></li>
+    <li><a href="https://sciencemarchto.ca/#team">Team</a></li>
+  </ul>
+</nav>
+<header>
+  <div id="logo_wrapper">
+    <img id="logo" src="/logo-white.png" alt="March for Science Toronto Logo" />
+  </div>
+  <div id="title">
+    <h1>MARCH FOR SCIENCE TORONTO</h1>
+    <h2 id="subtitle">SATURDAY APRIL 14, 2018 11AM</h2>
+    <h4>presented by</h4>
+    <img src="presenter.png" id="presenter"/>
+  </div>
+</header>
+<div class="social">
+  <a href="https://www.facebook.com/ScienceMarchTO/"><img src="/facebook.png" /></a>
+  <a href="https://twitter.com/ScienceMarchTO"><img src="/twitter.png" /></a>
+  <a href="https://instagram.com/ScienceMarchTO"><img src="/instagram.png" /></a>
+  <a href="mailto:sciencemarchto@gmail.com"><img src="/email.png" /></a>
+</div>
+<main role="main">
+<section id="whyareyoumarching">
+<h1>#whyareyoumarching</h1>
+<p>
+  <img src="whyareyoumarching.png" style="width:100%; align:center;" />
+</p>
+<p>
+On Saturday April 14th 2018, we will march in solidarity with scientists around the world to bring to light some of the issues that still impact science today.
+</p><p>
+While many people in society enjoy the benefits of research, scientists are often taken for granted. Science is (literally) everywhere, and many Canadian scientists have made fundamental contributions that are enjoyed worldwide! Your favourite app? Someone wrote a code to run it. A Canadian computer scientist, James Gosling, first developed the Java programming language that is still used today to power websites and apps. A Canadian engineer, John A. Hopps, developed the first cardiac pacemaker. His work laid the foundation for the current pacemaker, and has saved millions of lives. Canadian surgeon, Dr. Frederick Banting shared the Nobel Prize for his work on the discovery of insulin. Along with other researchers, including his medical student Charles Best, Dr. Banting found that insulin could be used to treat diabetes. The “Queen of Hurricanes” Elizabeth “Elsie” MacGill was the first female graduate to earn a Master’s degree in electrical engineering, and was the first practicing female engineer in Canada. Among her contributions, Elsie designed and helped produce the Hawker Hurricane – a fighter jet used by Canadians in the Battle of Britain.
+</p><p>
+While we have highlighted some of the contributions made by Canadian scientists, all of us benefit from the advances made by researchers around the globe. Sadly, scientists continue to face a number of challenges that directly impact our work, which ultimately has a direct impact on society as a whole.
+</p><p>
+We want to hear from you, #whyareyoumarching? Download a speech bubble and tweet, post, tag, and share why you support the #MarchforScience. Don’t forget to tag @ScienceMarchTO and include the hashtag #whyareyoumarching in your post!
+</p>
+</section>
+<section id="videocontest">
+  <h1>Video Contest</h1>
+  <p>
+  Hey, we might work in a lab, code at our computers, or compute complex mathematical algorithms, but that doesn’t mean we aren’t creative! To help promote the March for Science on April 14th 2018, @ScienceMarchTO is hosting a friendly ScienceLife video challenge. We’re leaving the creativity up to you!
+</p><p>
+Choose one of the following:<ol>
+<li>What your research is about & why it’s important, using the hashtag, #whyitsimportant</li>
+<li>What a typical day looks like in your field, using the hashtag, #adayinthelife</li>
+<li>What poor science-related practices grind your gears, using the hashtag, #scienceetiquettefail</li>
+</ol>
+</p><p>
+To participate, we ask that you include the #whyareyoumarching and one of the above hashtags on your submission.
+</p><p>
+As strong advocates for equity and inclusion, we ask that you do NOT include or promote material that is discriminatory, illegal, sexually explicit, profane etc.
+</p><p>
+To keep yourself out of trouble, we strongly advise that you do NOT include or promote trademarks, logos, insignia, or copyrighted material (including, but not limited to, books, artwork, posters, and music).
+</p><p>
+As scientists and science advocates, it goes without saying that reproducing someone else’s work or idea is a huge “no-no”. Only post creative works that are wholly your own idea!
+</p><p>
+Ensure that everyone that takes part in the video agrees to having it posted on social media…otherwise, you can’t post it!
+</p><p>
+We’ll be re-posting some of our favourites on our socials, but only if you tag us by including @ScienceMarchTO on your post!
+</p><p>
+So get filming! You have up to 30 seconds to tell us about your ScienceLife in the most original & creative way possible!
+</p>
+</section>
+<footer>
+  <div class="social">
+    <a href="https://www.facebook.com/ScienceMarchTO/"><img src="/facebook.png" /></a>
+    <a href="https://twitter.com/ScienceMarchTO"><img src="/twitter.png" /></a>
+    <a href="https://instagram.com/ScienceMarchTO"><img src="/instagram.png" /></a>
+    <a href="mailto:sciencemarchto@gmail.com"><img src="/email.png" /></a>
+  </div>
+  <div><a href="/2017">Archived website from 2017</a></div>
+  <div>Cover photo from 2017 March for Science Toronto taken by Dan Weaver</a>
+  <div>Facebook / twitter / instagram icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a></div>
+  <div>Email icon made by <a href="http://www.flaticon.com/authors/yannick" title="Yannick">Yannick</a></div>
+  <div>All icons licensed <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></div>
+</footer>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</body>
+</html>
