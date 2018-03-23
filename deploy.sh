@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rsync * savage@oracle.savageinter.net:/var/www/html/sciencemarchto.ca
+rsync -r * savage@oracle.savageinter.net:/var/www/html/sciencemarchto.ca/
